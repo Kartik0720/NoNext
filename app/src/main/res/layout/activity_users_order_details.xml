@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".users.OrderDetailsActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myOrdersProductDetailCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/myOrdersProductDetailStatusCardView">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/myOrdersProductDetailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/title"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"
+                    android:textStyle="normal" />
+
+
+
+                <TextView
+                    android:id="@+id/myOrdersProductDetailRupeeSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_below="@+id/myOrdersProductDetailTitle"/>
+
+
+                <TextView
+                    android:id="@+id/myOrdersProductDetailPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123"
+                    android:textSize="25sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/myOrdersProductDetailTitle"
+                    android:layout_toEndOf="@id/myOrdersProductDetailRupeeSymbol"/>
+
+                <ImageView
+                    android:id="@+id/myOrdersProductDetailImageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myOrdersProductDetailStatusCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/myOrdersProductDetailCardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <View
+                    android:id="@+id/myOrdersViewOrderPlaced"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/order_status_current"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+
+                <TextView
+                    android:id="@+id/textOrderPlaced"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderPlaced"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/myOrdersViewOrderPlaced"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/weReceivedOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we_have_received_your_order"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@id/textOrderPlaced"
+                    app:layout_constraintEnd_toEndOf="@id/textOrderPlaced"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderPlaced"/>
+
+                <View
+                    android:id="@+id/myOrdersViewOrderConfirmed"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/order_status_current"
+                    app:layout_constraintTop_toTopOf="@id/textOrderConfirmed"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textOrderConfirmed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderConfirmed"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toEndOf="@id/myOrdersViewOrderConfirmed"
+                    app:layout_constraintTop_toBottomOf="@id/weReceivedOrder"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/yourOrderConfirmed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_order_has_been_confirmed"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@id/textOrderConfirmed"
+                    app:layout_constraintEnd_toEndOf="@id/textOrderConfirmed"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderConfirmed"/>
+
+                <View
+                    android:id="@+id/myOrdersHorizontalConfirmed"
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="@color/blue"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderPlaced"
+                    app:layout_constraintEnd_toEndOf="@id/myOrdersViewOrderPlaced"
+                    app:layout_constraintStart_toStartOf="@id/myOrdersViewOrderPlaced"
+                    app:layout_constraintBottom_toTopOf="@+id/myOrdersViewOrderConfirmed"/>
+
+                <View
+                    android:id="@+id/myOrdersViewOrderPacked"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/order_status_current"
+                    app:layout_constraintTop_toTopOf="@id/textOrderPacked"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/textOrderPacked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderPacked"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toEndOf="@id/myOrdersViewOrderPacked"
+                    app:layout_constraintTop_toBottomOf="@id/yourOrderConfirmed"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/yourOrderPacked"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_order_has_been_packed"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@id/textOrderPacked"
+                    app:layout_constraintEnd_toEndOf="@id/textOrderPacked"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderPacked"/>
+
+                <View
+                    android:id="@+id/myOrdersHorizontalPacked"
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="@color/blue"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderConfirmed"
+                    app:layout_constraintEnd_toEndOf="@id/myOrdersViewOrderConfirmed"
+                    app:layout_constraintStart_toStartOf="@id/myOrdersViewOrderConfirmed"
+                    app:layout_constraintBottom_toTopOf="@+id/myOrdersViewOrderPacked"/>
+
+                <View
+                    android:id="@+id/myOrdersViewOrderShipped"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/order_status_current"
+                    app:layout_constraintTop_toTopOf="@id/textOrderShipped"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/textOrderShipped"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderShipped"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toEndOf="@id/myOrdersViewOrderShipped"
+                    app:layout_constraintTop_toBottomOf="@id/yourOrderPacked"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/yourOrderShipped"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_order_has_been_shipped"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@id/textOrderShipped"
+                    app:layout_constraintEnd_toEndOf="@id/textOrderShipped"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderShipped"/>
+
+                <View
+                    android:id="@+id/myOrdersHorizontalShipped"
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="@color/blue"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderPacked"
+                    app:layout_constraintEnd_toEndOf="@id/myOrdersViewOrderPacked"
+                    app:layout_constraintStart_toStartOf="@id/myOrdersViewOrderPacked"
+                    app:layout_constraintBottom_toTopOf="@+id/myOrdersViewOrderShipped"/>
+
+                <View
+                    android:id="@+id/myOrdersViewOrderDelivered"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="30dp"
+                    android:background="@drawable/order_status_current"
+                    app:layout_constraintTop_toTopOf="@id/textOrderDelivered"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/textOrderDelivered"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderDelivered"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toEndOf="@id/myOrdersViewOrderDelivered"
+                    app:layout_constraintTop_toBottomOf="@id/yourOrderShipped"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/yourOrderDelivered"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_order_has_been_delivered"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@id/textOrderDelivered"
+                    app:layout_constraintEnd_toEndOf="@id/textOrderDelivered"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderDelivered"/>
+
+                <View
+                    android:id="@+id/myOrdersHorizontalDelivered"
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="@color/blue"
+                    app:layout_constraintTop_toBottomOf="@id/myOrdersViewOrderShipped"
+                    app:layout_constraintEnd_toEndOf="@id/myOrdersViewOrderShipped"
+                    app:layout_constraintStart_toStartOf="@id/myOrdersViewOrderShipped"
+                    app:layout_constraintBottom_toTopOf="@+id/myOrdersViewOrderDelivered"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myOrdersProductDetailPaymentCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/myOrdersProductDetailStatusCardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp">
+
+
+                <TextView
+                    android:id="@+id/myOrdersTextPaymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paymentMethod"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/myOrdersTextPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cashOnDelivery"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_grey"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/myOrdersTextBillingAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/billingAddress"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/myOrdersTextBillAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Address"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/myOrdersTextBillPincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pincode"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myOrdersProductDetailShippingCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/myOrdersProductDetailPaymentCardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:id="@+id/myOrdersTextShippingAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shippingAddress"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/myOrdersTextShipAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Address"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/myOrdersTextShipPincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pincode"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

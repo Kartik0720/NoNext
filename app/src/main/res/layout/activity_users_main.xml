@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer"
+        tools:openDrawer="start">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+            <include
+                layout="@layout/toolbar"/>
+
+        <!--    <include
+                android:id="@+id/noti"
+                layout="@layout/notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"/>-->
+
+            <ImageView
+                android:id="@+id/cart"
+                android:src="@drawable/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shopping_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="633dp"
+                app:cardBackgroundColor="@color/red"
+                app:cardCornerRadius="50dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/cart"
+                app:layout_constraintTop_toTopOf="@+id/cart">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="9dp"
+                        android:layout_height="10dp"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="7sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <FrameLayout
+                android:id="@+id/frameContainer"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="56dp"
+                android:layout_marginBottom="58dp"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/bottom_nav" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                app:itemIconTint="@drawable/tab_color"
+                app:itemTextColor="@drawable/tab_color"
+                app:menu="@menu/nav_menu" />
+        </RelativeLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/navigationMenu"
+            app:menu="@menu/draw_menu"
+            app:headerLayout="@layout/header"
+            android:layout_gravity="start"
+            app:itemIconTint="@drawable/tab_color"
+            app:itemTextColor="@drawable/tab_color" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

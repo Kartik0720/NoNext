@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp"
+    android:id="@+id/search_card_view">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flat:"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+
+        <TextView
+            android:id="@+id/offerTextViewOne"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:text="1000 of on 10000.use code:SAVE1000"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/offerImageView"
+            android:layout_width="315dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/offerTextView"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/fashion_offer" />
+       <!-- android:scaleType="fitXY"-->
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T&amp;C Apply"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expires :"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/useroffersdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="amit"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    tools:context=".users.OffersActivity"-->
+<!--    android:orientation="vertical">-->
+
+
+<!--<include-->
+<!--        android:id="@+id/toolbar"-->
+<!--        layout="@layout/toolbar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:id="@+id/item_cardView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="220dp"-->
+<!--        app:cardElevation="50dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/toolbar">-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:padding="20dp">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/offerTextView"-->
+<!--                android:layout_width="180dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:layout_marginTop="3dp"-->
+<!--                android:layout_marginEnd="1dp"-->
+<!--                android:text="Flat RS 250 of on RS 999.Use code:SAVE250"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/offerImageView"-->
+<!--                android:layout_width="315dp"-->
+<!--                android:layout_height="66dp"-->
+<!--                android:layout_below="@+id/offerTextView"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:layout_marginTop="3dp"-->
+<!--                android:scaleType="fitXY"-->
+<!--                android:src="@drawable/fashion_offer" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/terms_and_condition"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/offerImageView"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:text="T&amp;C Apply"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/offer_expires_date"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/terms_and_condition"-->
+<!--                android:layout_marginTop="3dp"-->
+<!--                android:layout_marginStart="3dp"-->
+<!--                android:text="Expires :"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/useroffersdate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/terms_and_condition"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:layout_toEndOf="@+id/offer_expires_date"-->
+<!--                android:text="28 feb 2022"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp" />-->
+
+
+<!--        </RelativeLayout>-->
+<!--    </com.google.android.material.card.MaterialCardView>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/RecElectro"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingBottom="50dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/toolbar"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/electronicsProgressBar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+

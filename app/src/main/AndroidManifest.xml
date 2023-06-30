@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.nonext">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA " />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NoNext">
+        <activity
+            android:name=".admin.AdminManagePayment"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminProductDetailActivity"
+            android:exported="false" /> <!-- Seller -->
+        <activity
+            android:name=".seller.SellerOrdersDetail"
+            android:exported="false"
+            android:parentActivityName=".seller.OrdersActivity" />
+        <activity
+            android:name=".seller.SellerAddAddressActivity"
+            android:exported="false"
+            android:parentActivityName=".seller.ProfileActivity" />
+        <activity
+            android:name=".seller.SellerAddressActivity"
+            android:exported="false"
+            android:parentActivityName=".seller.ProfileActivity" />
+        <activity
+            android:name=".seller.SellerAccountActivity"
+            android:exported="false"
+            android:parentActivityName=".seller.ProfileActivity" />
+        <activity
+            android:name=".seller.seller_login"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".seller.seller_Register"
+            android:exported="false" />
+        <activity
+            android:name=".seller.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".seller.ProductActivity"
+            android:exported="false"
+            android:parentActivityName=".seller.seller_Activity" />
+        <activity
+            android:name=".seller.SellerProdDetails"
+            android:exported="false"
+            android:parentActivityName=".seller.ProductActivity" />
+        <activity
+            android:name=".seller.OrdersActivity"
+            android:exported="false"
+            android:parentActivityName=".seller.seller_Activity" />
+        <activity
+            android:name=".seller.seller_Activity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".seller.seller_add_product"
+            android:exported="false" />
+        <activity
+            android:name=".seller.ProductEditActivity"
+            android:exported="false" /> <!-- Admin -->
+        <activity
+            android:name=".admin.admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ViewSellerAndUser"
+            android:exported="false"
+            android:parentActivityName=".admin.admin_Activity" />
+        <activity
+            android:name=".admin.sellerList"
+            android:exported="false"
+            android:parentActivityName=".admin.ViewSellerAndUser" />
+        <activity
+            android:name=".admin.feedbackDetail"
+            android:exported="false"
+            android:parentActivityName=".admin.admin_Activity" />
+        <activity
+            android:name=".admin.userList"
+            android:exported="false"
+            android:parentActivityName=".admin.ViewSellerAndUser" />
+        <activity
+            android:name=".admin.ManageProducts"
+            android:exported="false"
+            android:parentActivityName=".admin.admin_Activity" />
+        <activity
+            android:name=".admin.ApplyOffers"
+            android:exported="false"
+            android:parentActivityName=".admin.admin_Activity" />
+        <activity
+            android:name=".admin.ViewFeedback"
+            android:exported="false"
+            android:parentActivityName=".admin.admin_Activity" />
+        <activity
+            android:name=".admin.ViewAllOrders"
+            android:exported="false"
+            android:parentActivityName=".admin.admin_Activity" /> <!-- User -->
+        <activity
+            android:name=".users.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.AddAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.PrivacyPolicyActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.HelpCentreActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.ReturnOrders"
+            android:exported="false"
+            android:parentActivityName=".users.HelpCentreActivity" />
+        <activity
+            android:name=".users.MyCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.MyOrdersActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.MenuCategories"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.AppliancesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.MobileActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.FashionActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.OffersActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.MyAccount"
+            android:exported="false" />
+        <activity
+            android:name=".users.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.ElectronicsActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.FeedbackUser"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".users.TrackMyOrder"
+            android:exported="false"
+            android:parentActivityName=".users.HelpCentreActivity" />
+        <activity
+            android:name=".users.Payment"
+            android:exported="false" />
+        <activity
+            android:name=".users.MyWishList"
+            android:exported="false" />
+        <activity
+            android:name=".users.DeliveryAddress"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".users.MyCartActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_onnzf9SocoCFhn" />
+    </application>
+
+</manifest>

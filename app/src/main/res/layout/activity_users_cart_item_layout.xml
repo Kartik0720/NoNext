@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/border_round"
+    android:elevation="3dp">
+
+    <ImageView
+        android:id="@+id/MyCart_Prod_Img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/MyCart_Prod_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/MyCart_Prod_Img"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MyCart_Prod_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="10000/-"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyCart_Prod_Title" />
+
+    <TextView
+        android:id="@+id/MyCart_Offers_Applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="offers applied"
+        android:textColor="@color/green"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/MyCart_Prod_Price"
+        app:layout_constraintTop_toBottomOf="@+id/MyCart_Prod_Price" />
+
+    <TextView
+        android:id="@+id/MyCart_Coupens_Applid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="coupens applid"
+        android:textColor="@color/light_red"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyCart_Offers_Applied" />
+
+    <ImageView
+        android:id="@+id/MyCart_minusQty"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border_round"
+        android:padding="5dp"
+        android:src="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="@+id/MyCart_Qty"
+        app:layout_constraintEnd_toStartOf="@+id/MyCart_Qty"
+        app:layout_constraintTop_toTopOf="@+id/MyCart_Qty" />
+    <TextView
+        android:id="@+id/MyCart_Qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/MyCart_Coupens_Applid"
+        app:layout_constraintStart_toEndOf="@+id/MyCart_Prod_Img"
+        app:layout_constraintTop_toBottomOf="@+id/MyCart_Prod_Title"
+        app:layout_constraintVertical_bias="1.0"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/MyCart_plusQty"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border_round"
+        android:padding="5dp"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@+id/MyCart_Qty"
+        app:layout_constraintStart_toEndOf="@+id/MyCart_Qty"
+        app:layout_constraintTop_toTopOf="@+id/MyCart_Qty" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/MyCart_Qty"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:background="@drawable/border_round"-->
+<!--        android:drawableEnd="@drawable/drop_down_arrow"-->
+<!--        android:drawablePadding="8dp"-->
+<!--        android:padding="3dp"-->
+<!--        android:text="Qty : 1"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/MyCart_Coupens_Applid"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/MyCart_Prod_Img"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/MyCart_Prod_Title"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+
+    <LinearLayout
+        android:id="@+id/MyCart_Remove_Item_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyCart_Prod_Img">
+
+        <TextView
+            android:id="@+id/MyCart_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Save for later"
+            app:drawableStartCompat="@drawable/save_for_later" />
+        <TextView
+            android:id="@+id/MyCart_Remove_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:layout_marginStart="40dp"
+            android:text="Remove Item"
+            app:drawableStartCompat="@drawable/delete" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/MyCart_Remove_Item_Btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyCart_Prod_Img"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

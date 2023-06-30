@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.AddToCartActivity">
+
+</layout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <include-->
+<!--            android:id="@+id/toolbar"-->
+<!--            layout="@layout/toolbar"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/AddToCartImg"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/AddToCartImg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="250dp"-->
+<!--            android:src="@drawable/logo"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/toolbar"-->
+<!--           />-->
+<!--        <TextView-->
+<!--            android:id="@+id/product_title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:text="Product Title"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/AddToCartImg"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/product_price"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:text="Rs.45000/-"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="24sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/product_title"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/product_price_cut"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:text="Rs.45000/-"-->
+<!--            app:layout_constraintBottom_toBottomof="@+id/product_price"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/product_price"/>-->
+
+
+<!--    </LinearLayout>-->
+<!--    </ScrollView>-->

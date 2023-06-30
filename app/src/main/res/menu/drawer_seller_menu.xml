@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/drawer_seller_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/drawer_seller_product"
+        android:icon="@drawable/cart"
+            android:title="Products" />
+    <item
+        android:id="@+id/drawer_seller_order"
+        android:icon="@drawable/orders"
+        android:title="Orders" />
+    <item
+        android:id="@+id/drawer_seller_profile"
+        android:icon="@drawable/person"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/drawer_seller_offer"
+        android:icon="@drawable/offer"
+        android:title="Offer Zone" />
+    <item
+        android:id="@+id/drawer_seller_privacy"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/drawer_seller_help"
+        android:title="Help" />
+    <item
+        android:id="@+id/drawer_seller_logout"
+        android:title="Logout"/>
+
+</menu>

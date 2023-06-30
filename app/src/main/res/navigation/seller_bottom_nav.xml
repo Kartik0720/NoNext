@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seller_bottom_nav"
+    app:startDestination="@id/seller_homeFragment">
+
+    <fragment
+        android:id="@+id/seller_homeFragment"
+        android:name="com.project.nonext.seller.seller_HomeFragment"
+        android:label="fragment_seller__home"
+        tools:layout="@layout/fragment_seller__home" />
+    <fragment
+        android:id="@+id/seller_personFragment"
+        android:name="com.project.nonext.seller.seller_ProfileFragment"
+        android:label="fragment_seller__person"
+        tools:layout="@layout/fragment_seller__profile" />
+
+</navigation>

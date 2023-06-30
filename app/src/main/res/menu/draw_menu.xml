@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<!--    <group android:checkableBehavior="single">-->
+        <item
+            android:id="@+id/drawer_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/drawer_category"
+            android:icon="@drawable/category"
+            android:title="Category" />
+        <item
+            android:id="@+id/drawer_cart"
+            android:icon="@drawable/shopping_cart"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/drawer_orders"
+            android:icon="@drawable/orders"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/drawer_wishlist"
+            android:icon="@drawable/heart"
+            android:title="My Wishlist" />
+        <item
+            android:id="@+id/drawer_profile"
+            android:icon="@drawable/person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/drawer_offer"
+            android:icon="@drawable/offer"
+            android:title="Offer Zone" />
+        <item
+            android:id="@+id/drawer_feedback"
+            android:icon="@drawable/send"
+            android:title="Send Feedback" />
+        <item
+            android:id="@+id/drawer_help"
+            android:title="Help Centre" />
+        <item
+            android:id="@+id/drawer_privacy_policy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/drawer_logout"
+            android:title="@string/logout" />
+<!--    </group>-->
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardElevation="50dp"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/searchProductImageView"
+            android:layout_width="62dp"
+            android:layout_height="61dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/search_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/searchProductImageView"
+            android:ellipsize="end"
+            android:text="Product Name"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

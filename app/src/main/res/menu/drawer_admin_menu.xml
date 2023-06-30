@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+<!--        tools:showIn="navigation_view">-->
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/drawer_admin_home"
+                android:icon="@drawable/home"
+                android:title="Home" />
+            <item
+                android:id="@+id/drawer_admin_profile"
+                android:icon="@drawable/person"
+                android:title="Profile" />
+            <item
+                android:id="@+id/drawer_admin_product"
+                android:icon="@drawable/orders"
+                android:title="Admin Orders" />
+            <item
+                android:id="@+id/drawer_manage_product"
+                android:icon="@drawable/admin_manage_product"
+                android:title="Manage Product" />
+
+            <item
+                android:id="@+id/drawer_view_users"
+                android:icon="@drawable/admin_people"
+                android:title="View Users" />
+
+            <item
+                android:id="@+id/drawer_manage_orders"
+                android:icon="@drawable/admin_manage_orders"
+                android:title="Manage Orders" />
+        </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_manage_payment"
+            android:icon="@drawable/manage_pay"
+            android:title="Manage Payment" />
+        <item
+            android:id="@+id/drawer_apply_offers"
+            android:icon="@drawable/admin_offers"
+            android:title="View Offers" />
+        <item
+            android:id="@+id/drawer_Adminmy_product"
+            android:icon="@drawable/admin_products"
+            android:title="My products" />
+        <item
+            android:id="@+id/drawer_admin_view_product"
+            android:icon="@drawable/admin_feedback"
+            android:title="View Feedback" />
+        <item
+            android:id="@+id/drawer_admin_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

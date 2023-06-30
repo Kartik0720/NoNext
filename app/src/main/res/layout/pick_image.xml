@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:padding="20dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:layout_gravity="start|center_horizontal"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/PickImgCamera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/pick_image_todo"
+            android:src="@drawable/ic_pick_camera" />
+
+        <ImageView
+            android:id="@+id/PickImgPhotos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/pick_image_todo"
+            android:src="@drawable/ic_add_potos" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

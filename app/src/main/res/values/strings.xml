@@ -1,0 +1,141 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">NoNext</string>
+
+    <!-- User Menu items-->
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+
+    <!--Main-->
+    <string name="category">Categories</string>
+    <string name="products">Products to view</string>
+
+    <!--Login-->
+    <string name="loginBtn">Login</string>
+    <string name="signInContinue">Sign In to Continue</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="newUserSignUp">New User?Sign Up</string>
+    <string name="go_to_seller_login">Go To Seller Login</string>
+
+    <!--    Register-->
+    <string name="login">Already a User? Login </string>
+    <string name="createAccountTextView">Create New Account</string>
+    <string name="signUp">Sign Up</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="logout">Logout</string>
+
+    <!--    Forget Password-->
+    <string name="todo">TODO</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="submit">submit</string>
+    <string name="go_back_to_login">Go Back To Login</string>
+
+    <!--Drawer-->
+    <string name="hi">Hi,</string>
+    <string name="userName">Name</string>
+    <string name="email">Email</string>
+    <string name="signupandlogin">Sign Up/ Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Profile Page Strings-->
+    <string name="myAccount">My Account</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help Center</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">LastName</string>
+    <string name="mobileNo">Mobile Number</string>
+    <string name="Address">Address</string>
+    <string name="orders">Orders</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="changePassword">Change Password</string>
+    <string name="save_details">Save Details</string>
+    <string name="date">Date</string>
+    <string name="add_address"><u>Add New Address</u></string>
+    <string name="fullname">Full Name</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="add">Add</string>
+
+    <!--    Seller login-->
+    <string name="newsellersignup">newSellerSignUp</string>
+    <string name="go_to_user_login">Go To User Login!</string>
+    <string name="seller_login">Seller Login</string>
+
+    <!--    Seller Register-->
+    <string name="go_to_login">Go To Login</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+
+    <!--    Seller Add Product-->
+    <string name="product_details">Product Details</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_descriprion">Product Descriprion</string>
+    <string name="quantity">Quantity</string>
+    <string name="addproductcate">Category</string>
+    <string name="sub_category">Sub-Category</string>
+    <string name="brand">Brand</string>
+    <string name="add_images">Add Images</string>
+    <string name="upload_product">Upload Product</string>
+    <string name="todosellerprodlayot">TODO</string>
+    <string name="pick_image_todo">TODO</string>
+
+    <!-- Help center    -->
+    <string name="Help1">Get Quick Customer Support By Selecting Your Item</string>
+    <string name="help_orde">  I Want To Track My Order</string>
+    <string name="help_manage">  I want to manage my order</string>
+    <string name="help_returns">  I want to help with returns &amp; refunds</string>
+    <string name="help_other">  I want to help with other issues</string>
+    <string name="help_return"> Place a return request in the My Orders page.You will get an option to choose refund/replace/exchange as per our return policy</string>
+    <string name="help_cod">In case of cash on delivery,you will have to provide a bank account number for the refund.</string>
+
+    <!--Change Password-->
+    <string name="oldPassword">Old Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="save">Save</string>
+
+    <!--Others-->
+    <string name="title">Title</string>
+    <string name="price">Price</string>
+    <string name="tax">Inclusive of all Taxes</string>
+    <string name="Highlights">Highlights</string>
+    <string name="highlightDetails">HighlightDetails</string>
+    <string name="description">Description</string>
+    <string name="descriptionDetails">Description Details</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+
+    <string name="addtocart">Add to Cart</string>
+    <string name="buynow">Buy Now</string>
+    <string name="update">Update</string>
+    <string name="cartEmpty">Cart Empty</string>
+    <string name="seller_update_images">Images</string>
+
+    <!--    order details-->
+    <string name="orderPlaced">Order Placed</string>
+    <string name="we_have_received_your_order">we have received your order</string>
+    <string name="orderConfirmed">Order Confirmed</string>
+    <string name="your_order_has_been_confirmed">your order has been confirmed</string>
+    <string name="orderPacked">Order Packed</string>
+    <string name="your_order_has_been_packed">your order has been packed</string>
+    <string name="orderShipped">Order Shipped</string>
+    <string name="your_order_has_been_shipped">your order has been shipped</string>
+    <string name="orderDelivered">Order Delivered</string>
+    <string name="your_order_has_been_delivered">your order has been delivered</string>
+    <string name="paymentMethod">Payment Method</string>
+    <string name="cashOnDelivery">Cash On Delivery</string>
+    <string name="billingAddress">Billing Address</string>
+    <string name="shippingAddress">Shipping Address</string>
+    <string name="orderEmpty">No Orders Placed</string>
+
+    <!-- Payment -->
+    <string name="chooseYourPaymentMethod">Choose Your Payment Method</string>
+    <string name="payOnline">Pay Online</string>
+</resources>

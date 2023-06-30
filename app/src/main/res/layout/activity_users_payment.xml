@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.Payment">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/PaymentOption"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:background="@drawable/border_round"-->
+<!--        android:elevation="10dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="5dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/linearLayout"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        tools:ignore="MissingConstraints"-->
+<!--        tools:layout_editor_absoluteX="4dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/border"-->
+<!--            android:text="All Payments Options"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <RadioGroup-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            &lt;!&ndash;    UPI&ndash;&gt;-->
+<!--            <RadioButton-->
+<!--                android:id="@+id/radioButtonUpi"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="UPI" />-->
+
+            <!--    Wallets-->
+<!--            <RadioButton-->
+<!--                android:id="@+id/radioButtonWallets"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Wallets" />-->
+
+<!--            &lt;!&ndash;    Credit / Debit / ATM Card&ndash;&gt;-->
+<!--            <RadioButton-->
+<!--                android:id="@+id/radioButtonCreditDebitCard"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Credit / Debit / ATM Card" />-->
+
+<!--            &lt;!&ndash;    Net Banking&ndash;&gt;-->
+<!--            <RadioButton-->
+<!--                android:id="@+id/radioButtonNetBanking"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Net Benking" />-->
+
+<!--            &lt;!&ndash;    Cash On Delivery&ndash;&gt;-->
+<!--            <RadioButton-->
+<!--                android:id="@+id/radioButtonCashOnDelivery"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Cash On Delivery" />-->
+
+<!--        </RadioGroup>-->
+
+<!--    </LinearLayout>-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/paymentCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/chooseYourPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chooseYourPaymentMethod"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/paymentImageView"/>
+
+            <ImageView
+                android:id="@+id/paymentImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/paymentimage"
+                app:layout_constraintTop_toBottomOf="@+id/chooseYourPaymentMethod"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/PaymentOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/paymentImageView"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="4dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonPayOnline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="19dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/payOnline"
+                        tools:layout_editor_absoluteX="10dp"
+                        tools:layout_editor_absoluteY="80dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonCOD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/cashOnDelivery"
+                        tools:layout_editor_absoluteX="10dp"
+                        tools:layout_editor_absoluteY="80dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="16sp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/Payment_Total_Amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!--    Button  -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/PaymentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="Continue"
+            android:textSize="16sp"
+            android:background="#3DB6E6"
+            android:radius="16dp"
+            android:queryBackground="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
